@@ -1,0 +1,23 @@
+{
+  "name": "leaseintel",
+  "version": "1.0.0",
+  "description": "Lease obligations desk for multi-location businesses. Claude reads the lease, LeaseIntel keeps it live. No AI inside.",
+  "type": "module",
+  "main": "src/server.js",
+  "engines": {
+    "node": ">=20"
+  },
+  "scripts": {
+    "start": "node src/server.js",
+    "test": "node --test --test-concurrency=1 test/*.test.js"
+  },
+  "dependencies": {
+    "@modelcontextprotocol/sdk": "1.32.2",
+    "express": "5.2.1",
+    "pg": "8.23.1",
+    "zod": "3.25.76"
+  },
+  "devDependencies": {
+    "@electric-sql/pglite": "0.3.16"
+  }
+}
